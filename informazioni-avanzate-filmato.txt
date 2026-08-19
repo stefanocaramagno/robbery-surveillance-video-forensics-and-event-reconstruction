@@ -1,0 +1,21 @@
+Nome File: copia-video.mp4
+Percorso File: C:\Users\stefa\Desktop\copia-video-slave.mp4
+Dimensioni File (in byte): 14500853
+Tipo: Video
+Format: mov, mp4, m4a, 3gp, 3g2, mj2
+Canali Colore: 3
+Larghezza (in pixel): 1920
+Altezza (in pixel): 1080
+Codec: h264
+Fps: 25
+Lunghezza (in fotogrammi): 25
+Durata (tempo): 00:01:09:800
+SAR (Storage Aspect Ratio): 16:9 (1.778)
+SAR (Sample Aspect Ratio): 1:1 (1.000)
+DAR (Display Aspect Ratio): 16:9 (1.778)
+PAR (Pixel Aspect Ratio): 1:1 (1.000)
+Intervallo Colore: Limited
+Flussi Totali: 2
+Flussi Video: 1
+Flussi Audio: 1
+Flussi Sottotitolo: 0

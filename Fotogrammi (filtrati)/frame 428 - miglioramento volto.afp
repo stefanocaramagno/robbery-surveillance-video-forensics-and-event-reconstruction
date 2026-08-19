@@ -1,0 +1,704 @@
+{
+   "Name" : "Amped FIVE Project",
+   "Revision" : 33279,
+   "Version" : "3.0",
+   "Properties" : {
+      "Case" : "",
+      "Author" : "",
+      "Description" : "",
+      "Report Max Image Width" : 600,
+      "Report Min Image Width" : 0
+   },
+   "Chains" : [
+      {
+         "Name" : "video-copia-slave",
+         "Id" : 5,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 5,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "../video-copia-slave.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "Limited",
+                  "Chroma Upsampling" : "Accurate Rounding (Slower)",
+                  "Audio Stream" : "1",
+                  "Add Video Frames" : false,
+                  "Added Frames Color" : "black",
+                  "Original File" : "",
+                  "Concatenate File List" : null
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "altezza-soggetti",
+         "Id" : 15,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 15,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "../video-copia-slave.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "Limited",
+                  "Chroma Upsampling" : "Accurate Rounding (Slower)",
+                  "Audio Stream" : "1",
+                  "Add Video Frames" : false,
+                  "Added Frames Color" : "black",
+                  "Original File" : "",
+                  "Concatenate File List" : null
+               }
+            },
+            {
+               "Type" : "Measure 3d",
+               "Id" : 19,
+               "Enabled" : true,
+               "Parameters" : {
+                  "X-axis Lines" : [
+                     [
+                        [
+                           633,
+                           523
+                        ],
+                        [
+                           1221,
+                           716
+                        ]
+                     ],
+                     [
+                        [
+                           164,
+                           532
+                        ],
+                        [
+                           918,
+                           989
+                        ]
+                     ]
+                  ],
+                  "Y-axis Lines" : [
+                     [
+                        [
+                           17,
+                           640
+                        ],
+                        [
+                           412,
+                           556
+                        ]
+                     ],
+                     [
+                        [
+                           728,
+                           956
+                        ],
+                        [
+                           1269,
+                           688
+                        ]
+                     ]
+                  ],
+                  "Z-axis Lines" : [
+                     [
+                        [
+                           37,
+                           206
+                        ],
+                        [
+                           46,
+                           509
+                        ]
+                     ],
+                     [
+                        [
+                           1385,
+                           95
+                        ],
+                        [
+                           1278,
+                           800
+                        ]
+                     ]
+                  ],
+                  "Reference Axis Direction" : "Z-axis",
+                  "Reference Line" : [
+                     [
+                        256,
+                        493
+                     ],
+                     [
+                        256,
+                        193
+                     ]
+                  ],
+                  "Reference Length" : 210,
+                  "Unit of Measurement" : "cm",
+                  "Decimal Places" : 2,
+                  "Correct Direction" : true,
+                  "Output Line" : [
+                     [
+                        521,
+                        777
+                     ],
+                     [
+                        539,
+                        316
+                     ]
+                  ],
+                  "Output Length" : 174.3094446,
+                  "Output Error" : 1.154193697,
+                  "Experimental Error" : 0,
+                  "Output Range" : "173.16 cm – 175.46 cm",
+                  "Output Line 2" : [
+                     [
+                        833,
+                        750
+                     ],
+                     [
+                        871,
+                        298
+                     ]
+                  ],
+                  "Output Length 2" : 176.9986506,
+                  "Output Error 2" : 1.135956443,
+                  "Output Range 2" : "175.86 cm – 178.13 cm",
+                  "Difference" : -2.689205954,
+                  "Difference Error" : 1.61943204,
+                  "Difference Range" : "-4.31 cm – -1.07 cm",
+                  "Helper Lines" : [
+                  ],
+                  "Show X Lines" : true,
+                  "Show Y Lines" : true,
+                  "Show Z Lines" : true,
+                  "Show Reference Line" : true,
+                  "Show Reference Measure" : true,
+                  "Show Output Line" : true,
+                  "Show Output Measure" : true,
+                  "Show Helper Lines" : true,
+                  "Show Horizon" : false
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "estrazione-marca-casco",
+         "Id" : 9,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 9,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "../video-copia-slave.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "Limited",
+                  "Chroma Upsampling" : "Accurate Rounding (Slower)",
+                  "Audio Stream" : "1",
+                  "Add Video Frames" : false,
+                  "Added Frames Color" : "black",
+                  "Original File" : "",
+                  "Concatenate File List" : null
+               }
+            },
+            {
+               "Type" : "Unsharp Masking",
+               "Id" : 54,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 0.9,
+                  "Size" : 93,
+                  "Threshold" : 0,
+                  "Mode" : "Intensity",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            }
+         ]
+      },
+      {
+         "Name" : "miglioramento-identificazione-soggetto",
+         "Id" : 13,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 13,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "../video-copia-slave.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "Limited",
+                  "Chroma Upsampling" : "Accurate Rounding (Slower)",
+                  "Audio Stream" : "1",
+                  "Add Video Frames" : false,
+                  "Added Frames Color" : "black",
+                  "Original File" : "",
+                  "Concatenate File List" : null
+               }
+            },
+            {
+               "Type" : "Unsharp Masking",
+               "Id" : 31,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 0.5,
+                  "Size" : 99,
+                  "Threshold" : 0,
+                  "Mode" : "Intensity",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Turbulence Deblurring",
+               "Id" : 34,
+               "Enabled" : true,
+               "Parameters" : {
+                  "Strength" : 3.015088054,
+                  "Noise" : 0.0335196905,
+                  "Boundary Conditions" : "Edge Tapering"
+               }
+            }
+         ]
+      }
+   ],
+   "Bookmarks" : [
+      {
+         "Name" : "Carica Filmato, fotogramma 78",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 78,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 118",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 118,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 200",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 200,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 256",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 256,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 265",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 265,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 279",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 279,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 323",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 323,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 398",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 398,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 447",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 447,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 498",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 498,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 600",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 600,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 628",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 628,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 660",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 660,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 708",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 708,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 861",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 861,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 891",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 891,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1120",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1120,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1219",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1219,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1289",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1289,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1317",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1317,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1406",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1406,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1562",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1562,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1588",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1588,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 428",
+         "Description" : "",
+         "Id" : 34,
+         "Position" : 428,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Maschera di Contrasto, fotogramma 838",
+         "Description" : "",
+         "Id" : 54,
+         "Position" : 838,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Misurazione 3d, fotogramma 1045",
+         "Description" : "",
+         "Id" : 19,
+         "Position" : 1045,
+         "Level" : 1,
+         "IsExpanded" : true
+      }
+   ],
+   "BookmarksTree" : [
+      {
+         "Name" : "Carica Filmato, fotogramma 78",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 78,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 118",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 118,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 200",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 200,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 256",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 256,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 265",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 265,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 279",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 279,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 323",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 323,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 398",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 398,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 447",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 447,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 498",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 498,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 600",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 600,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 628",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 628,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 660",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 660,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 708",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 708,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 861",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 861,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 891",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 891,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1120",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1120,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1219",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1219,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1289",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1289,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1317",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1317,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1406",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1406,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1562",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1562,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 1588",
+         "Description" : "",
+         "Id" : 5,
+         "Position" : 1588,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 428",
+         "Description" : "",
+         "Id" : 34,
+         "Position" : 428,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Maschera di Contrasto, fotogramma 838",
+         "Description" : "",
+         "Id" : 54,
+         "Position" : 838,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Misurazione 3d, fotogramma 1045",
+         "Description" : "",
+         "Id" : 19,
+         "Position" : 1045,
+         "Level" : 1,
+         "IsExpanded" : true
+      }
+   ],
+   "Notes" : "",
+   "Id" : 34,
+   "Position" : 428
+}
